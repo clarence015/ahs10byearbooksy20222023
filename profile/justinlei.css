@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4EEE0;
+}
+
+header {
+    background-color: #187bcd;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h3 {
+    font-size: 37px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h4 {
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav {
+    background-color: #03254c;
+    color: #ffffff;
+    padding: 12px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 16px;
+}
+  
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #1167b1;
+}
+
+.container {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+ section h2 {
+    font-family: 'Alkatra', cursive;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section table {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+section td {
+    padding-left: 10px;
+}
+
+section h4 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+}
+
+section ul {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.favorites {
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+}
+
+.whole-content {
+    position: relative;
+    -webkit-animation-name: wholecontent;
+    -webkit-animation-duration: 1s;
+    animation-name: wholecontent;
+    animation-duration: 1s
+}
+  
+@-webkit-keyframes wholecontent {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+  
+@keyframes wholecontent { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+  
+#myDiv {
+    display: none;
+}
+
+#loading {
+    display: block;
+    --height-of-loader: 4px;
+    --loader-color: #0071e2;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 47%;
+}
+  
+#loading::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+    ;
+}
+  
+@keyframes moving {
+    50% {
+      width: 100%;
+    }
+  
+    100% {
+      width: 0;
+      right: 0;
+      left: unset;
+    }
+}
