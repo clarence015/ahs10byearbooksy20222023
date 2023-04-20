@@ -54,14 +54,17 @@ body {
     left: 25%;
     background-color: #6096B4;
     border: 5px solid #3E54AC;
+    font-family: 'Passion One', cursive;
   }
   
   h1 {
-    font-size: 25px;;
+    font-size: 25px;
+    color: white;
   }
   
   label {
-    font-size: 20px;;
+    font-size: 20px;
+    color: white;
   }
   
   input[type="text"] {
